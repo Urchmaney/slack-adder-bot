@@ -18,5 +18,5 @@ class BotController < ApplicationController
         user_token.access_token
       )
     end
-  end    
+  end
 end
