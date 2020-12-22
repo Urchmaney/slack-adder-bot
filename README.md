@@ -5,6 +5,9 @@ It takes input in the following format:  {digit} + {digit}
 
 e.g  3 + 4
 
+## Usage
+<a href="https://slack.com/oauth/v2/authorize?client_id=1590332497938.1590559423507&scope=chat:write,im:read,im:history&user_scope="> Click here to install the application on your slack work station. </a>
+
 ## Technology
 - Ruby
 - Rails
