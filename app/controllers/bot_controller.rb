@@ -1,5 +1,5 @@
 class BotController < ApplicationController
-  def create
+  def listen
     render json: { challenge: params[:challenge] }
     return unless params[:event]
 
@@ -18,15 +18,5 @@ class BotController < ApplicationController
         user_token.access_token
       )
     end
-  end
-
-  def register
-    user_token = SlackUserToken.new(Services::SlackApiService.get_bot_user_token(params[:code]))
-    if user_token.valid?
-      user_token.save
-      return render json: { success: true }
-    end
-
-    render json: { status: 'error', code: 400, message: 'Issue registering app.' }
   end
 end
