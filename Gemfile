@@ -10,6 +10,8 @@ gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 
+gem 'pg'
+
 gem 'rest-client', '~> 2.0.1'
 
 gem 'figaro'
